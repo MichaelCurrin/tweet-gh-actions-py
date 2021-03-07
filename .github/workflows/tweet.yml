@@ -36,10 +36,11 @@ jobs:
       # Use HEREDOC to escape both single and double quotes.
       - name: Post tweet to Twitter
         run: |
-          python tweet.py "$(cat << EOF
+          MSG=$(cat <<EOF
           ${{ github.event.inputs.msg }}
           EOF
-          )"
+          )
+          python tweet.py "$MSG"
         env:
           CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
           CONSUMER_TOKEN: ${{ secrets.CONSUMER_TOKEN }}
