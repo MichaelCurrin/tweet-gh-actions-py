@@ -12,27 +12,11 @@
 
 ## About
 
-- This is a simple template project.
-- It uses a short Python script to post a tweet to your Twitter account.
-- Run in the cloud using [GitHub Actions](https://michaelcurrin.github.io/dev-resources/resources/ci-cd/github-actions/) and a manual trigger - [Workflow dispatch](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#workflow-dispatch). See [tweet.yml](/.github/workflows/tweet.yml) workflow file.
+- This project can post a tweet to your Twitter account using a cloud runner.
+- This comes with a short Python script - [tweet.py](/tweepy.py).
+- It runs using [GitHub Actions](https://michaelcurrin.github.io/dev-resources/resources/ci-cd/github-actions/) and a manual trigger - [Workflow dispatch](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#workflow-dispatch). See [tweet.yml](/.github/workflows/tweet.yml) workflow file.
 - The flow does not rely on any Actions specialized around Twitter. It just uses generic Python setup action.
-
-
-## Start tweeting from your own repo
-
-Get a copy of this project.
-
-<div align="center">
-
-[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/tweet-gh-actions-py/generate)
-
-</div>
-
-Customize the secrets on GitHub as per the [docs](/docs).
-
-Then run the workflow on GitHub to post a tweet using text that you enter.
-
-You can customize this project with your own logic. Such as to generate a random message, based on a text file of possible messages. You could make the workflow run daily by setting up a [Schedule](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#trigger-on-a-schedule) trigger.
+- This is a template project - get a copy and then extend it for your needs.
 
 
 ## Sample usage
@@ -55,6 +39,32 @@ Check the output in the log:
 View the profile on Twitter and see the new tweet added:
 
 <img src="/docs/_media/created-tweet.png" alt="Tweet screenshot" title="Tweet screenshot" width="500" />
+
+
+
+## Start tweeting from your own repo
+
+Get a copy of this project.
+
+<div align="center">
+
+[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/tweet-gh-actions-py/generate)
+
+</div>
+
+Customize the secrets on GitHub as per the [docs](/docs).
+
+Then run the workflow on GitHub to post a tweet using text that you enter.
+
+### Customize
+
+You can customize this project with your own logic. 
+
+Such as to generate a random message, based on a text file of possible messages.
+
+You could make the workflow run daily by setting up a [Schedule](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#trigger-on-a-schedule) trigger.
+
+Or you could tweet whenever you deploy or create a GitHub release. Though if you are adding tweeting logic to an existing project, you might want to use a tweet-related Action from the GitHub Actions marketplace. That means you just need a few lines in a workflow and don't need the whole Python script.
 
 
 ## Documentation
