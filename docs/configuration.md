@@ -1,13 +1,8 @@
 # Configuration
-
-## Generate tokens
-
-See [instructions](https://gist.github.com/da559dcda9f1a0a202b74f2127be5bf9) to setup a Twitter account and generate API tokens.
+> Set tokens
 
 
-## Set tokens
-
-### Export directly
+## Export directly
 
 Set the values once off.
 
@@ -20,7 +15,7 @@ $ export ACCESS_SECRET=jkl
 
 Or
 
-### Export from dotenv file
+## Export from dotenv file
 
 Store the values in an ignored dotenv file.
 
