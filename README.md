@@ -4,30 +4,43 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/tweet-gh-actions-py?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/tweet-gh-actions-py/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
-[![OS - Linux](https://img.shields.io/badge/OS-Linux-blue?logo=linux&logoColor=white)](https://www.linux.org/)
-[![OS - macOS](https://img.shields.io/badge/OS-macOS-blue?logo=apple&logoColor=white)](https://www.apple.com/macos/)
+[![Python - >=3.6](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
+[![dependency - tweepy](https://img.shields.io/badge/dependency-tweepy-blue)](https://pypi.org/project/tweepy)
+
+[![Made with GH Actions](https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white)](https://github.com/features/actions)
 
 
 ## Sample usage
+> How to run the GitHub Actions workflow manually to create a tweet
 
-<div align="center">
+Go to the Actions tab.
+
+Select the workflow name under Workflows.
+
+Click _Run workflow_ button on the right.
 
 <img src="/_media/workflow-1.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
 
+Enter your message.
+
 <img src="/_media/workflow-2.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+
+Check the output in the log.
 
 <img src="/_media/workflow-3.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
 
+View the profile on Twitter and see the new tweet added.
+
 <img src="/_media/created-tweet.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
 
-
-</div>
-
+In this case, [@WhoopiGoldbot](https://twitter.com/whoopigoldbot).
 
 
 ## About
 
 This project doesn't rely on any Actions specialized around Twitter. Just a generic Python setup action.
+
+You can get a copy of this repo and then customize it.
 
 <div align="center">
 
