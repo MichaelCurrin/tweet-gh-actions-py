@@ -12,15 +12,22 @@
 
 ## About
 
-This project doesn't rely on any Actions specialized around Twitter. Just a generic Python setup action.
+This is a template project which demonstrates how to use a short Python script to post a tweet to your Twitter account using [GitHub Actions](https://michaelcurrin.github.io/dev-resources/resources/ci-cd/github-actions/).
 
-You can get a copy of this repo and then customize it.
+The flow doesn't rely on any Actions specialized around Twitter. Just a generic Python setup action. See [tweet.yml](/.github/workflows/tweet.yml) workflow file.
+
+
+## Copy this template
+
+Get a copy of this repo. Then run the workflow on GitHub to post a tweet using text that you enter.
 
 <div align="center">
 
 [![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/tweet-gh-actions-py/generate)
 
 </div>
+
+Then customize such with your own logic. Such as to generate a random message daily based on a text file of possible messages. This can be done using `cron` in the workflow.
 
 
 ## Sample usage
