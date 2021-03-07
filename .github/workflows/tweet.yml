@@ -6,7 +6,6 @@ on:
       msg:
         description: Tweet message
         required: true
-        default: Hello, World!
 
 jobs:
   build:
