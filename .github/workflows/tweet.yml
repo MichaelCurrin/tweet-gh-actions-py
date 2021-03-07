@@ -1,4 +1,4 @@
-name: Tweet CI
+name: Tweet
 
 on:
   workflow_dispatch:
