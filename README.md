@@ -19,19 +19,19 @@ Select the workflow name under Workflows.
 
 Click _Run workflow_ button on the right.
 
-<img src="/_media/workflow-1.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+<img src="/docs/_media/workflow-1.png" alt="Workflow screenshot" title="Workflow screenshot" width="400" />
 
 Enter your message.
 
-<img src="/_media/workflow-2.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+<img src="/docs/_media/workflow-2.png" alt="Workflow screenshot" title="Workflow screenshot" width="400" />
 
 Check the output in the log.
 
-<img src="/_media/workflow-3.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+<img src="/docs/_media/workflow-3.png" alt="Workflow screenshot" title="Workflow screenshot" width="400" />
 
 View the profile on Twitter and see the new tweet added.
 
-<img src="/_media/created-tweet.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+<img src="/docs/_media/created-tweet.png" alt="Tweet screenshot" title="Tweet screenshot" width="400" />
 
 In this case, [@WhoopiGoldbot](https://twitter.com/whoopigoldbot).
 
