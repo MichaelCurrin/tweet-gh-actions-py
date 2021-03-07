@@ -34,5 +34,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - run: |
+          echo "Message: ${{ github.event.inputs.msg }}!"
+          echo "Home: ${{ github.event.inputs.home }}!"
+
       - name: Post tweet to Twitter
         run: python tweet.py
