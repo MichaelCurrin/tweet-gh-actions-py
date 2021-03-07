@@ -12,9 +12,9 @@
 
 ## About
 
-This is a template project which demonstrates how to use a short Python script to post a tweet to your Twitter account using [GitHub Actions](https://michaelcurrin.github.io/dev-resources/resources/ci-cd/github-actions/).
-
-The flow doesn't rely on any Actions specialized around Twitter. Just a generic Python setup action. See [tweet.yml](/.github/workflows/tweet.yml) workflow file.
+- This is a simple template project.
+- It demonstrates how to use a short Python script to post a tweet to your Twitter account, using [GitHub Actions](https://michaelcurrin.github.io/dev-resources/resources/ci-cd/github-actions/).
+- The flow doesn't rely on any Actions specialized around Twitter. Just a generic Python setup action. See [tweet.yml](/.github/workflows/tweet.yml) workflow file.
 
 
 ## Copy this template
@@ -27,11 +27,17 @@ Get a copy of this repo. Then run the workflow on GitHub to post a tweet using t
 
 </div>
 
-Then customize such with your own logic. Such as to generate a random message daily based on a text file of possible messages. This can be done using `cron` in the workflow.
+Then customize such with your own logic. 
+
+Such as to generate a random message, based on a text file of possible messages.
+
+You can make the workflow run daily by setting up a [Schedule](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#trigger-on-a-schedule) trigger.
 
 
 ## Sample usage
 > How to run the GitHub Actions workflow manually to create a tweet
+
+_Note: Only administrators of this repo can run the workflow. But the Actions logs are public if you want to see the history of runs._
 
 Click _Run workflow_ button on the right:
 
