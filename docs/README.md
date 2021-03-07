@@ -6,7 +6,7 @@
 
 ## Menu
 
-## Run with GitHub Actions
+### Run with GitHub Actions
 
 1. [Generate tokens](generate-tokens.md)
 2. [GitHub Actions](github-actions.md)
