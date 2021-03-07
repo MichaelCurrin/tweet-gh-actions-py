@@ -33,10 +33,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Use HEREDOC to escape single and double quotes.
+      # Use HEREDOC to escape both single and double quotes.
       - name: Post tweet to Twitter
         run: |
           python tweet.py "$(cat << EOF
           ${{ github.event.inputs.msg }}
           EOF
           )"
+        env:
+          CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
+          CONSUMER_TOKEN: ${{ secrets.CONSUMER_TOKEN }}
+          ACCESS_SECRET: ${{ secrets.ACCESS_SECRET }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
