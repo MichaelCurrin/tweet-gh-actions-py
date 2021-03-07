@@ -19,7 +19,7 @@ def main(args):
     """
     Command-line entrypoint to post a tweet message to Twitter.
     """
-    if not args:
+    if not args or args[0] == "":
         print("Provide a message on the CLI as the first argument.")
         print("It must a single string. Multiple lines are allowed.")
 
