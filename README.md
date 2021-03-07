@@ -1,5 +1,5 @@
 # Tweet with GitHub Actions
-> Post a tweet to your Twitter account using GitHub Actions
+> Post a tweet message using a button in GitHub Actions
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/tweet-gh-actions-py?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/tweet-gh-actions-py/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
@@ -13,13 +13,14 @@
 ## About
 
 - This is a simple template project.
-- It demonstrates how to use a short Python script to post a tweet to your Twitter account, using [GitHub Actions](https://michaelcurrin.github.io/dev-resources/resources/ci-cd/github-actions/).
-- The flow doesn't rely on any Actions specialized around Twitter. Just a generic Python setup action. See [tweet.yml](/.github/workflows/tweet.yml) workflow file.
+- It uses a short Python script to post a tweet to your Twitter account.
+- Run in the cloud using [GitHub Actions](https://michaelcurrin.github.io/dev-resources/resources/ci-cd/github-actions/) and a manual trigger - [Workflow dispatch](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#workflow-dispatch). See [tweet.yml](/.github/workflows/tweet.yml) workflow file.
+- The flow does not rely on any Actions specialized around Twitter. It just uses generic Python setup action.
 
 
-## Copy this template
+## Start tweeting from your own repo
 
-Get a copy of this repo. Then run the workflow on GitHub to post a tweet using text that you enter.
+Get a copy of this project.
 
 <div align="center">
 
@@ -27,11 +28,11 @@ Get a copy of this repo. Then run the workflow on GitHub to post a tweet using t
 
 </div>
 
-Then customize such with your own logic. 
+Customize the secrets on GitHub as per the [docs](/docs).
 
-Such as to generate a random message, based on a text file of possible messages.
+Then run the workflow on GitHub to post a tweet using text that you enter.
 
-You can make the workflow run daily by setting up a [Schedule](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#trigger-on-a-schedule) trigger.
+You can customize this project with your own logic. Such as to generate a random message, based on a text file of possible messages. You could make the workflow run daily by setting up a [Schedule](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#trigger-on-a-schedule) trigger.
 
 
 ## Sample usage
