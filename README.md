@@ -12,13 +12,13 @@
 
 <div align="center">
 
-<img src="/workflow-1.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+<img src="/_media/workflow-1.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
 
-<img src="/workflow-2.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+<img src="/_media/workflow-2.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
 
-<img src="/workflow-3.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+<img src="/_media/workflow-3.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
 
-<img src="/created-tweet.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+<img src="/_media/created-tweet.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
 
 
 </div>
