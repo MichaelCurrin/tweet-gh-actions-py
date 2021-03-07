@@ -4,6 +4,26 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/tweet-gh-actions-py?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/tweet-gh-actions-py/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
+[![OS - Linux](https://img.shields.io/badge/OS-Linux-blue?logo=linux&logoColor=white)](https://www.linux.org/)
+[![OS - macOS](https://img.shields.io/badge/OS-macOS-blue?logo=apple&logoColor=white)](https://www.apple.com/macos/)
+
+
+## Sample usage
+
+<div align="center">
+
+<img src="/workflow-1.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+
+<img src="/workflow-2.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+
+<img src="/workflow-3.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+
+<img src="/created-tweet.png" alt="Sample screenshot" title="Sample screenshot" width="400" />
+
+
+</div>
+
+
 
 ## About
 
@@ -16,36 +36,13 @@ This project doesn't rely on any Actions specialized around Twitter. Just a gene
 </div>
 
 
-## Development
-> Local setup for easy testing
+## Documentation
 
-### Install
+<div align="center">
 
-Recommended - run this in a virtual environment using Python 3.
+[![View - Documentation](https://img.shields.io/badge/View-Documentation-blue?style=for-the-badge)](/docs/)
 
-```sh
-$ pip install -r requirements.txt
-```
-
-### Configure
-
-```sh
-$ export CONSUMER_KEY=abc CONSUMER_SECRET=def ACCESS_KEY=ghi ACCESS_SECRET=jkl
-```
-
-### Run
-
-```sh
-$ python tweet.py
-```
-
-```sh
-$ python tweet.py 'Line 1
-Line 2
-
-#tweepy #twitterapi #python'
-```
-
+</div>
 
 
 ## License
