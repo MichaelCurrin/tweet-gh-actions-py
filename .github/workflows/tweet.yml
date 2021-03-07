@@ -36,6 +36,7 @@ jobs:
       # Use HEREDOC to escape single and double quotes.
       - name: Post tweet to Twitter
         run: |
-          python tweet.py $(cat << EOF
+          python tweet.py "$(cat << EOF
           ${{ github.event.inputs.msg }}
-          EOF)
+          EOF
+          )"
