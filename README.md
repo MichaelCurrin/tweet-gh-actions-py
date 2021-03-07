@@ -10,12 +10,21 @@
 [![Made with GH Actions](https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white)](https://github.com/features/actions)
 
 
+## About
+
+This project doesn't rely on any Actions specialized around Twitter. Just a generic Python setup action.
+
+You can get a copy of this repo and then customize it.
+
+<div align="center">
+
+[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/tweet-gh-actions-py/generate)
+
+</div>
+
+
 ## Sample usage
 > How to run the GitHub Actions workflow manually to create a tweet
-
-Go to the Actions tab.
-
-Select the workflow name under Workflows.
 
 Click _Run workflow_ button on the right:
 
@@ -32,21 +41,6 @@ Check the output in the log:
 View the profile on Twitter and see the new tweet added:
 
 <img src="/docs/_media/created-tweet.png" alt="Tweet screenshot" title="Tweet screenshot" width="500" />
-
-In this case, I posted for my [@WhoopiGoldbot](https://twitter.com/whoopigoldbot) bot account.
-
-
-## About
-
-This project doesn't rely on any Actions specialized around Twitter. Just a generic Python setup action.
-
-You can get a copy of this repo and then customize it.
-
-<div align="center">
-
-[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/tweet-gh-actions-py/generate)
-
-</div>
 
 
 ## Documentation
