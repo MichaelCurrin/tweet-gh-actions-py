@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Cache dependencies
+      - name: Get cached Python packages
         uses: actions/cache@v2
         with:
           path: ~/.cache/pip
