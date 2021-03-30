@@ -19,6 +19,19 @@
 - This is a template project - get a copy and then extend it for your needs.
 
 
+## Disclaimer
+
+Tweeting using API requests and code requires registering a dev account on Twitter, which means filling in an application form and getting approval from Twitter's team.
+
+
+## Use-cases
+> How you could use this project
+
+- Tweet your GitHub repo URL or website URL on a deploy (like a merge to master or a release is created).
+- Generate a random tweet message from a file of possible messages and tweet it daily.
+- Just for fun, enter a message directly in GitHub Actions (though you're limited on the input which only accepts a single line of input - unless you adapted the Python script to convert `"\n"` text into an actual line break).
+
+
 ## Sample usage
 > How to run the GitHub Actions workflow manually to create a tweet
 
@@ -44,7 +57,9 @@ View the profile on Twitter and see the new tweet added:
 
 ## Start tweeting from your own repo
 
-Get a copy of this project.
+Only an admin user of ths repo can Tweet using it. But if you copy this repo to your own account and have Twitter API credentials at hand, you can start tweeting with GitHub too.
+
+Get a copy of this project:
 
 <div align="center">
 
@@ -52,7 +67,7 @@ Get a copy of this project.
 
 </div>
 
-Customize the secrets on GitHub as per the [docs](/docs).
+Next, customize the secrets on GitHub as per the [docs](/docs).
 
 Then run the workflow on GitHub to post a tweet using text that you enter.
 
@@ -64,7 +79,7 @@ Such as to generate a random message, based on a text file of possible messages.
 
 You could make the workflow run daily by setting up a [Schedule](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#trigger-on-a-schedule) trigger.
 
-Or you could tweet whenever you deploy or create a GitHub release. Though if you are adding tweeting logic to an existing project, you might want to use a tweet-related Action from the GitHub Actions marketplace. That means you just need a few lines in a workflow and don't need the whole Python script.
+Or you could tweet whenever you deploy or create a GitHub release. Though, if you are adding tweeting logic to an existing project, then instead of using this project, you might want to use a tweet-related Action from the GitHub Actions marketplace. That means you just need a few lines in a workflow and don't need the whole Python script.
 
 
 ## Documentation
