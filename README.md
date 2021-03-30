@@ -12,11 +12,11 @@
 
 ## About
 
-- This project can post a tweet to your Twitter account using a cloud runner.
-- This comes with a short Python script - [tweet.py](/tweepy.py).
+- This is a template project - get a copy and then customize it for your needs.
+- This project can post a tweet to your Twitter account using a cloud runner on GitHub.
 - It runs using [GitHub Actions](https://michaelcurrin.github.io/dev-resources/resources/ci-cd/github-actions/) and a manual trigger - [Workflow dispatch](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#workflow-dispatch). See [tweet.yml](/.github/workflows/tweet.yml) workflow file.
-- The flow does not rely on any Actions specialized around Twitter. It just uses generic Python setup action.
-- This is a template project - get a copy and then extend it for your needs.
+- The flow does not rely on any Actions specialized around Twitter. It uses a generic Python setup action and your own logic.
+- This comes with a short Python script - [tweet.py](/tweepy.py).
 
 
 ## Disclaimer
@@ -79,7 +79,7 @@ Such as to generate a random message, based on a text file of possible messages.
 
 You could make the workflow run daily by setting up a [Schedule](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#trigger-on-a-schedule) trigger.
 
-Or you could tweet whenever you deploy or create a GitHub release. Though, if you are adding tweeting logic to an existing project, then instead of using this project, you might want to use a tweet-related Action from the GitHub Actions marketplace. That means you just need a few lines in a workflow and don't need the whole Python script.
+Or you could tweet whenever you deploy or create a GitHub release. Though, if you are adding tweeting logic to an existing project, then instead of using this project, you might want to use a tweet-related Action from the [GitHub Actions marketplace](https://github.com/marketplace). Which means you just need a few lines in a workflow and don't need a whole Python script.
 
 
 ## Documentation
