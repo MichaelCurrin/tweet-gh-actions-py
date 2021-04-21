@@ -24,12 +24,13 @@
 Tweeting using API requests and code requires registering a dev account on Twitter, which means filling in an application form and getting approval from Twitter's team.
 
 
-## Use-cases
+## Use cases
 > How you could use this project
 
 - Tweet your GitHub repo URL or website URL on a deploy (like a merge to master or a release is created).
 - Generate a random tweet message from a file of possible messages and tweet it daily.
 - Just for fun, enter a message directly in GitHub Actions (though you're limited on the input which only accepts a single line of input - unless you adapted the Python script to convert `"\n"` text into an actual line break).
+- Copy the code to run somewhere else. Like on your web server, a Lambda, an automated task or a manual script. Just avoid running tweet logic on a frontend (like with JS) and you'd unsafely expose your credentials, while running server side is fine.
 
 
 ## Sample usage
@@ -52,7 +53,6 @@ Check the output in the log:
 View the profile on Twitter and see the new tweet added:
 
 <img src="/docs/_media/created-tweet.png" alt="Tweet screenshot" title="Tweet screenshot" width="500" />
-
 
 
 ## Start tweeting from your own repo
