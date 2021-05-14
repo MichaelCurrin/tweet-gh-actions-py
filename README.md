@@ -1,5 +1,5 @@
-# Tweet with GitHub Actions
-> Post a tweet message using a button in GitHub Actions
+# Tweet with GitHub Actions 🐦 🎬 
+> Post a tweet message by pressing a button in GitHub Actions that runs a Python script
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/tweet-gh-actions-py?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/tweet-gh-actions-py/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
