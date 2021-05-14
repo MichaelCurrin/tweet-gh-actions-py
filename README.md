@@ -15,8 +15,9 @@
 - This is a template project - get a copy and then customize it for your needs.
 - This project can post a tweet to your Twitter account using a cloud runner on GitHub.
 - It runs using [GitHub Actions](https://michaelcurrin.github.io/dev-resources/resources/ci-cd/github-actions/) and a manual trigger - [Workflow dispatch](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/ci-cd/github-actions/triggers.html#workflow-dispatch). See [tweet.yml](/.github/workflows/tweet.yml) workflow file.
-- The flow does not rely on any Actions specialized around Twitter. It uses a generic Python setup action and your own logic.
-- This comes with a short Python script - [tweet.py](/tweepy.py).
+- The flow does **not** rely on any Actions that are specialized around Twitter. It uses a generic Python setup action and your own logic.
+- This comes with a short Python script - [tweet.py](/tweepy.py) which is the app run my the workflow.
+- Twitter API keys get by the repo owner in GitHub Actions' Secrets and used on the server side - so no one else on GitHub or looking at the log can see your credentials.
 
 
 ## Disclaimer
