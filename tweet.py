@@ -39,12 +39,12 @@ def main(args):
         sys.exit(1)
 
     msg = args[0]
-    if not msg;
+    if not msg:
         print("Message must not be an empty value")
 
     api = setup_conn()
 
-    print(f"Tweeting message:"
+    print(f"Tweeting message:")
     print(msg)
 
     tweet = api.update_status(msg)
