@@ -32,13 +32,15 @@ def main(args):
     """
     Command-line entrypoint to post a tweet message to Twitter.
     """
-    if not args or args[0] == "":
+    if not args:
         print("Provide a message on the CLI as the first argument.")
         print("It must be a single string. Multiple lines are allowed.")
 
         sys.exit(1)
 
     msg = args[0]
+    if not msg;
+        print("Message must not be an empty value")
 
     api = setup_conn()
 
