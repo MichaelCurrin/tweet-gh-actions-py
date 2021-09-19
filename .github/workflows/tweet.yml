@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout 🛎
+        uses: actions/checkout@v2
 
       - name: Set up Python 🐍
         uses: actions/setup-python@v2
@@ -20,7 +21,7 @@ jobs:
           python-version: 3.x
 
       - name: Cache Python packages
-        uses: actions/cache@v2
+        uses: actions/cache@v2 💾
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
@@ -28,18 +29,18 @@ jobs:
             ${{ runner.os }}-pip-
             ${{ runner.os }}-
 
-      - name: Install packages 
+      - name: Install packages ⚙
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       # Use HEREDOC for run to escape possible single and double quotes in the message.
-      - name: Post tweet to Twitter
+      - name: Post tweet to Twitter 🐦
         env:
-          CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
+          CONSUMER_KEY:    ${{ secrets.CONSUMER_KEY }}
           CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
-          ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
-          ACCESS_SECRET: ${{ secrets.ACCESS_SECRET }}
+          ACCESS_KEY:      ${{ secrets.ACCESS_KEY }}
+          ACCESS_SECRET:   ${{ secrets.ACCESS_SECRET }}
         run: |
           MSG=$(cat <<EOF
           ${{ github.event.inputs.msg }}
