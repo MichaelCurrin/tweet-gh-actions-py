@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 [![Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
-[![dependency - tweepy](https://img.shields.io/badge/dependency-tweepy-blue)](https://pypi.org/project/tweepy)
+[![dependency - tweepy](https://img.shields.io/badge/dependency-tweepy-blue?logo=twitter&logoColor=white)](https://pypi.org/project/tweepy)
 
 [![Made with GH Actions](https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white)](https://github.com/features/actions)
 
@@ -22,11 +22,9 @@
 
 ## Disclaimer
 
-Tweeting using API requests and some code actually requires registering a dev account and dev app on Twitter.
+Tweeting using API requests and some code actually requires _registering_ a dev account and dev app on Twitter.
 
-That means filling in an application form with your motivation and getting approval from Twitter's team.
-
-This can take some time and if you don't have a valid use-case that complies with Twitter guidelines or you don't explain how you'll use the API, you can get rejected.
+See my [Twitter policies](https://michaelcurrin.github.io/python-twitter-guide/#/policies) guide for more info.
 
 
 ## Use-cases
