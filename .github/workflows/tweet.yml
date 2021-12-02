@@ -9,6 +9,8 @@ on:
 
 jobs:
   tweet:
+    name: Tweet
+    
     runs-on: ubuntu-latest
 
     steps:
@@ -20,8 +22,8 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Cache Python packages
-        uses: actions/cache@v2 💾
+      - name: Cache Python packages 💾
+        uses: actions/cache@v2
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
@@ -34,7 +36,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Use HEREDOC for run to escape possible single and double quotes in the message.
+      # Use HEREDOC for `run` to escape possible single and double quotes in the message.
       - name: Post tweet to Twitter 🐦
         env:
           CONSUMER_KEY:    ${{ secrets.CONSUMER_KEY }}
