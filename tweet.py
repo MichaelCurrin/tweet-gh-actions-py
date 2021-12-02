@@ -15,7 +15,7 @@ ACCESS_KEY = os.environ.get('ACCESS_KEY')
 ACCESS_SECRET = os.environ.get('ACCESS_SECRET')
 
 
-def setup_conn():
+def setup_conn() -> None:
     """
     Return API connection object.
     """
@@ -28,7 +28,17 @@ def setup_conn():
     return tweepy.API(auth)
 
 
-def main(args):
+def post_tweet(msg: str) -> None:
+    api = setup_conn()
+
+    print(f"Tweeting message:")
+    print(msg)
+
+    tweet = api.update_status(msg)
+    print(tweet)
+
+
+def main(args: list[str]) -> None:
     """
     Command-line entrypoint to post a tweet message to Twitter.
     """
@@ -41,14 +51,9 @@ def main(args):
     msg = args[0]
     if not msg:
         print("Message must not be an empty value")
+        sys.exit(1)
 
-    api = setup_conn()
-
-    print(f"Tweeting message:")
-    print(msg)
-
-    tweet = api.update_status(msg)
-    print(tweet)
+    post_tweet(msg)
 
 
 if __name__ == "__main__":
