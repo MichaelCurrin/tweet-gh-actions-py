@@ -34,8 +34,7 @@ def post_tweet(msg: str) -> None:
     print(f"Tweeting message:")
     print(msg)
 
-    tweet = api.update_status(msg)
-    print(tweet)
+    api.update_status(msg)
 
 
 def main(args: list[str]) -> None:
