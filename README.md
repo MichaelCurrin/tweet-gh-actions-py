@@ -57,6 +57,8 @@ View the profile on Twitter and see the new tweet added:
 
 <img src="/docs/_media/created-tweet.png" alt="Tweet screenshot" width="500" />
 
+In this case, I've used my Whoopie Goldberg parody account for tweeting gold-related quotes and the gold price.
+
 
 ## Start tweeting from your own repo
 
